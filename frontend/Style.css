@@ -1,0 +1,14 @@
+.error {
+    color: #d93025;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+input.invalid {
+    border: 1px solid #d93025;
+}
+
+input.valid {
+    border: 1px solid #188038;
+}

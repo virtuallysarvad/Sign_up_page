@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="signup-card">
+
+            <h1>Create Account</h1>
+            <p class="subtitle">Fill in the details below to register</p>
+
+            <form id="signupForm" novalidate>
+
+                <!-- First Name -->
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="Enter your first name"
+                        autocomplete="given-name"
+                    >
+
+                    <small class="error" id="firstNameError"></small>
+                </div>
+
+
+                <!-- Last Name -->
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Enter your last name"
+                        autocomplete="family-name"
+                    >
+
+                    <small class="error" id="lastNameError"></small>
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                    >
+
+                    <small class="error" id="emailError"></small>
+                </div>
+
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="text"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter phone number"
+                        autocomplete="tel"
+                        inputmode="tel"
+                    >
+
+                    <small class="help-text">
+                        (Enter country code followed by your mobile number)
+                    </small>
+
+                    <small class="error" id="phoneError"></small>
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="new-password"
+                    >
+
+                    <small class="help-text">
+                        (Minimum 6 characters, including an alphabet, number and one of @ # $ & !)
+                    </small>
+
+                    <small class="error" id="passwordError"></small>
+                </div>
+
+
+                <!-- Repeat Password -->
+                <div class="form-group">
+                    <label for="repeatPassword">Repeat Password</label>
+
+                    <input
+                        type="password"
+                        id="repeatPassword"
+                        name="repeatPassword"
+                        placeholder="Re-enter your password"
+                        autocomplete="new-password"
+                    >
+
+                    <small class="error" id="repeatPasswordError"></small>
+                </div>
+
+
+                <!-- Pincode -->
+                <div class="form-group">
+                    <label for="pincode">Pincode</label>
+
+                    <input
+                        type="text"
+                        id="pincode"
+                        name="pincode"
+                        placeholder="Enter 6-digit pincode"
+                        inputmode="numeric"
+                        maxlength="6"
+                        autocomplete="postal-code"
+                    >
+
+                    <small class="error" id="pincodeError"></small>
+                </div>
+
+
+                <!-- General Error -->
+                <div id="formMessage" class="form-message"></div>
+
+
+                <!-- Submit -->
+                <button type="submit" id="submitButton">
+                    Create Account
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="signup.js"></script>
+
+</body>
+</html>
