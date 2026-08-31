@@ -3,7 +3,7 @@
 // ==================================================
 
 const API_BASE_URL =
-    "https://myrndv3kdb.execute-api.ap-south-1.amazonaws.com";
+    "https://65-0-236-206.nip.io";
 
 
 // ==================================================
